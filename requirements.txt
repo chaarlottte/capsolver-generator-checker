@@ -1,0 +1,4 @@
+requests
+charlogger
+pysocks
+account-generator-helper

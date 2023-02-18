@@ -1,0 +1,4 @@
+data/*.txt
+output/*.txt
+output/checker/*.txt
+.venve/

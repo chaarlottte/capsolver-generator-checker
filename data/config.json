@@ -1,0 +1,26 @@
+{
+    "global": {
+        "threads": 50,
+        "proxy_type": "http",
+        "mode": "GENERATOR",
+        "style": {
+            "color_text": true,
+            "default_prefix": "<TIME> <WORKERNUM>",
+            "debug_logging": true
+        },
+
+        "mode_options_dont_change": [ "GENERATOR", "CHECKER" ]
+    },
+    "generator": {
+        "tempmail": "GMAILNATOR",
+        "referral_code": "iZ2b_UEUrAXr",
+        "add_balance": true,
+
+        "tempmail_options_dont_change": [ "GMAILNATOR", "TEMPMAIL_PLUS", "INBOXKITTEN" ]
+    },
+    "checker": {
+        "mode": "ACC",
+
+        "mode_options_dont_change": [ "ACC", "KEY" ]
+    }
+}
