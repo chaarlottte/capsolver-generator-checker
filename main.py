@@ -1,10 +1,13 @@
 from src.task import CapsolverGen, CapsolverChecker
 from src.util.config import Config
 
-import threading
+import threading, os
 
 class main():
     def main(self):
+        if not os.path.exists("output/"): os.mkdir("output/")
+        if not os.path.exists("output/checker/"): os.mkdir("output/checker/")
+        if not os.path.exists("data/"): os.mkdir("data/")
         self.config = Config()
 
         match self.config.globalSettings.get("mode"):

@@ -81,7 +81,7 @@ class CapsolverGen():
                         if hash(_letter) not in letters:
                             letters.append(hash(_letter))
                             self.mail._letter_handler(_letter)
-                    time.sleep(5)
+                    time.sleep(2)
                 except Exception as e:
                     self.logger.error(title="EMAIL", data=f"Error while checking email!")
                     pass
@@ -126,6 +126,8 @@ class CapsolverGen():
         match self.emailService:
             case "GMAILNATOR":
                 self.mail = GmailNator()
+                email = self.mail.get_email_online(True,True,True)
+                self.mail.set_email(email)
             case "TEMPMAIL_PLUS":
                  self.mail = TempMailPlus()
             case "INBOXKITTEN":
@@ -136,7 +138,6 @@ class CapsolverGen():
             self.logger.debug(title="EMAIL", data=f"Got email: {letter.subject}")
             emailContent = letter.letter
             # self.verifyCode = emailContent.split("""background-color: #4abc6a;">                                    """)[1].split("""                                  </a>""")[0]
-            print(emailContent)
 
             match self.emailService:
                 case "GMAILNATOR":
