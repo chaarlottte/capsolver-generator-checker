@@ -1,8 +1,9 @@
-# Capsolver Generator/Checker
+# (Patched) Capsolver Generator/Checker
 A tool to create infinite accounts for [capsolver](https://capsolver.com) and add balance to them.
 
 Also a checker because why not.
 
+2/23/23: Tool is patched. They added checks for if a discord account is already linked to a capsolver account.
 ## How to use
 Put your proxies in `data/proxies.txt`. Format them as either `user:pass@host:port` or `host:port:user:pass`.
 
